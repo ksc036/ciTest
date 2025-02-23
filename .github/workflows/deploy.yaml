@@ -12,8 +12,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest  
     steps:
-      - name: Connect to Server and Pull Latest Code
+      - name: Check Runner User
         run: |
-          cd /home/ksc
-          ls -al
-          echo "Git pull completed successfully!"
+          whoami
+          pwd
+          ls -la
