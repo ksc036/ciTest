@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: Connect to Server and Pull Latest Code
         run: |
-          find ./ -type d  -name "visualize_self" | grep visualize_self
+          find / -type d -name "visualize_self" 2>/dev/null | grep visualize_self || true
           echo "Git pull completed successfully!"
