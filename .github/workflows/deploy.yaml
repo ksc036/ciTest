@@ -14,5 +14,6 @@ jobs:
     steps:
       - name: Connect to Server and Pull Latest Code
         run: |
-          echo "Current runner workspace: $GITHUB_WORKSPACE"
+          cd /home/ksc
+          ls -al
           echo "Git pull completed successfully!"
