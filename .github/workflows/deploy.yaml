@@ -1,0 +1,19 @@
+name: Auto Git Pull on Server
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  
+    steps:
+      - name: Connect to Server and Pull Latest Code
+        run: |
+          cd ~/visualize_self
+          git pull
+          echo "Git pull completed successfully!"
