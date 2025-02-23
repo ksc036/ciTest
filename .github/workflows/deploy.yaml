@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: Check Runner User
         run: |
-          cd /home
+          cd /home/ksc/actions-runner
           ls -al
