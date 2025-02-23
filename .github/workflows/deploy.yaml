@@ -14,6 +14,6 @@ jobs:
     steps:
       - name: Check Runner User
         run: |
+          whoami
           cd /home/ksc/visualize_self
           git pull
-          ls -al
