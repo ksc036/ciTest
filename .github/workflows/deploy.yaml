@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: Connect to Server and Pull Latest Code
         run: |
-          find / -type d -name "visualize_self" 2>/dev/null | grep visualize_self || true
+          echo "Current runner workspace: $GITHUB_WORKSPACE"
           echo "Git pull completed successfully!"
