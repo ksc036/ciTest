@@ -15,5 +15,5 @@ jobs:
       - name: Check Runner User
         run: |
           whoami
-          cd /home/ksc/visualize_self
-          git pull
+          cd ~
+          ./test.sh
