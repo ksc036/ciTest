@@ -16,4 +16,5 @@ jobs:
         run: |
           whoami
           cd ~
+          ls -al
           ./test.sh
