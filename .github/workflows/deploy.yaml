@@ -14,7 +14,8 @@ jobs:
     steps:
       - name: Check Runner User1
         run: |
+          pwd
           whoami
           cd ~
           ls -al
-          ./test.sh
+          ./deploy.sh
