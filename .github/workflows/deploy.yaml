@@ -12,7 +12,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Check Runner User
+      - name: Check Runner User1
         run: |
           whoami
           cd ~
